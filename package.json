@@ -1,0 +1,39 @@
+{
+  "name": "dashbord-mentor",
+  "version": "1.0.0",
+  "description": "RRS project dashbord-mentor",
+  "main": "webpack.config.js",
+  "scripts": {
+    "process": "node src/js/back/index.js",
+    "build": "webpack --config webpack.config.js",
+    "watch": "webpack --watch",
+    "start": "webpack-dev-server --open",
+    "lint": "eslint --config .eslintrc.json ./src/**/*.js",
+    "fix-lint": "eslint --config .eslintrc.json ./src/**/*.js --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-xlsx": "^0.12.1",
+    "react": "^16.8.2",
+    "react-dom": "^16.7.0",
+    "react-select": "^2.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "copy-webpack-plugin": "^4.6.0",
+    "css-loader": "^2.1.0",
+    "eslint": "^5.3.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-react": "^7.12.4",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.29.0",
+    "webpack-cli": "^3.2.1",
+    "webpack-dev-server": "^3.1.14"
+  }
+}
